@@ -7,12 +7,21 @@
 <title>Hexacode – Agence Web Moderne</title>
 <meta name="description" content="Hexacode est une agence web fondée par Bogdan et Alois. Projets web rapides, modernes et abordables.">
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="hexa_logo.png">
-<link rel="apple-touch-icon" sizes="180x180" href="hexa_logo.png">
-<link rel="icon" type="image/png" sizes="16x16" href="hexa_logo.png">
+<!-- FAVICON SVG INLINE (1 fichier unique) -->
+<link rel="icon" type="image/svg+xml"
+href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+<defs>
+<linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+<stop offset='0%' stop-color='%236366f1'/>
+<stop offset='100%' stop-color='%2322d3ee'/>
+</linearGradient>
+</defs>
+<rect x='0' y='0' width='100' height='100' rx='22' fill='url(%23g)'/>
+<text x='50' y='68' font-size='58' text-anchor='middle'
+fill='%23020617' font-family='Arial' font-weight='900'>H</text>
+</svg>">
 
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 
 <style>
@@ -47,7 +56,6 @@ body{
   padding:90px 20px;
 }
 
-/* HEADER */
 header{
   display:flex;
   justify-content:space-between;
@@ -60,7 +68,6 @@ header{
   gap:14px;
 }
 
-/* LOGO CSS (BUG FREE) */
 .logo-icon{
   width:46px;
   height:46px;
@@ -90,10 +97,8 @@ nav a{
   font-weight:500;
   transition:.3s;
 }
-
 nav a:hover{color:white}
 
-/* HERO CENTRÉ */
 .hero{
   margin-top:80px;
   display:flex;
@@ -103,11 +108,9 @@ nav a:hover{color:white}
   text-align:center;
 }
 
-/* HERO TEXT */
 .hero h1{
   font-size:56px;
   font-weight:900;
-  line-height:1.1;
 }
 
 .hero h1 span{
@@ -132,162 +135,12 @@ nav a:hover{color:white}
   color:#020617;
   font-weight:700;
   text-decoration:none;
-  transition:.35s;
 }
 
-.btn:hover{
-  transform:translateY(-4px);
-  box-shadow:0 25px 60px rgba(99,102,241,.45);
-}
-
-/* GLASS */
-.glass{
-  background:var(--card);
-  border:1px solid var(--border);
-  backdrop-filter:blur(16px);
-  border-radius:22px;
-  padding:45px;
-  box-shadow:0 40px 80px rgba(0,0,0,.4);
-  animation:float 7s ease-in-out infinite;
-  max-width:500px;
-  width:100%;
-}
-
-/* FLOAT ANIMATION */
-@keyframes float{
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-12px)}
-}
-
-/* SECTIONS */
-.section-title{
-  text-align:center;
-  font-size:42px;
-  font-weight:900;
-  margin-bottom:70px;
-}
-
-/* SERVICES */
-.services{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-}
-
-.service{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:22px;
-  padding:45px;
-  transition:.35s;
-}
-
-.service:hover{
-  transform:translateY(-10px);
-  background:rgba(255,255,255,0.12);
-}
-
-/* TEAM */
-.team{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-}
-
-.member{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:24px;
-  padding:50px;
-  text-align:center;
-  transition:.35s;
-}
-
-.member:hover{transform:translateY(-10px)}
-
-.avatar{
-  width:96px;
-  height:96px;
-  margin:auto;
-  margin-bottom:22px;
-  border-radius:50%;
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-}
-
-/* CONTACT */
-.contact{
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  border-radius:30px;
-  padding:90px 30px;
-  text-align:center;
-  color:#020617;
-}
-
-.contact h2{
-  font-size:44px;
-  font-weight:900;
-}
-
-.contact p{
-  margin:18px 0;
-  font-weight:600;
-  font-size:18px;
-}
-
-form{
-  margin-top:40px;
-  max-width:500px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-form input, form textarea{
-  width:100%;
-  padding:14px;
-  margin-bottom:15px;
-  border-radius:12px;
-  border:none;
-  outline:none;
-  font-size:15px;
-}
-
-form button{
-  width:100%;
-  padding:16px;
-  border-radius:14px;
-  border:none;
-  background:#020617;
-  color:white;
-  font-weight:700;
-  cursor:pointer;
-  transition:.3s;
-}
-
-form button:hover{
-  transform:translateY(-3px);
-  box-shadow:0 15px 40px rgba(0,0,0,.3);
-}
-
-/* FOOTER */
 footer{
   text-align:center;
   padding:50px;
   color:var(--muted);
-  font-size:14px;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  header{
-    flex-direction:column;
-    gap:25px;
-  }
-  .hero h1{
-    font-size:42px;
-  }
-  .hero p{
-    font-size:16px;
-  }
 }
 </style>
 </head>
@@ -307,73 +160,13 @@ footer{
 </header>
 
 <section class="container hero">
-  <div>
-    <h1>Nous codons vos idées<br><span>rapidement et efficacement</span></h1>
-    <p>
-      Hexacode est fondée par deux jeunes entrepreneurs passionnés.
-      Nous réalisons des projets web simples ou complexes,
-      en très peu de temps et à prix accessible.
-    </p>
-    <a href="#contact" class="btn">Nous contacter</a>
-  </div>
-
-  <div class="glass">
-    <h3>⚡ Rapide, propre, moderne</h3>
-    <p>Un code de qualité, un design actuel et une livraison express.</p>
-  </div>
-</section>
-
-<section id="services" class="container">
-  <h2 class="section-title">Nos services</h2>
-  <div class="services">
-    <div class="service">
-      <h3>Sites vitrines</h3>
-      <p>Parfaits pour lancer ou présenter votre activité.</p>
-    </div>
-    <div class="service">
-      <h3>Projets complexes</h3>
-      <p>Fonctionnalités sur mesure et structure solide.</p>
-    </div>
-    <div class="service">
-      <h3>Design moderne</h3>
-      <p>Interfaces premium, responsive et animées.</p>
-    </div>
-  </div>
-</section>
-
-<section id="team" class="container">
-  <h2 class="section-title">L’équipe</h2>
-  <div class="team">
-    <div class="member">
-      <div class="avatar"></div>
-      <h3>Bogdan</h3>
-      <p>Développeur web passionné et entrepreneur.</p>
-    </div>
-    <div class="member">
-      <div class="avatar"></div>
-      <h3>Alois</h3>
-      <p>Développeur web créatif et orienté solutions.</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="container">
-  <div class="contact">
-    <h2>Nous contacter</h2>
-    <p>📞 +32 474 22 29 26</p>
-    <p>📧 peltieralois@icloud.com</p>
-
-    <form action="mailto:peltieralois@icloud.com" method="post" enctype="text/plain">
-      <input type="text" name="Nom" placeholder="Votre nom" required>
-      <input type="email" name="Email" placeholder="Votre email" required>
-      <textarea name="Message" placeholder="Votre message" rows="5" required></textarea>
-      <button type="submit">Envoyer le message</button>
-    </form>
-  </div>
+  <h1>Nous codons vos idées<br><span>rapidement et efficacement</span></h1>
+  <p>Des projets web modernes, rapides et accessibles.</p>
+  <a class="btn">Nous contacter</a>
 </section>
 
 <footer>
-  © 2026 Hexacode — Tous droits réservés
+© 2026 Hexacode — Tous droits réservés
 </footer>
 
 </body>
