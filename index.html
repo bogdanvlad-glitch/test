@@ -1,173 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Hexacode – Agence Web Moderne</title>
-<meta name="description" content="Hexacode est une agence web fondée par Bogdan et Alois. Projets web rapides, modernes et abordables.">
-
-<!-- FAVICON SVG INLINE (1 fichier unique) -->
-<link rel="icon" type="image/svg+xml"
-href="data:image/svg+xml,
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-<defs>
-<linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
-<stop offset='0%' stop-color='%236366f1'/>
-<stop offset='100%' stop-color='%2322d3ee'/>
-</linearGradient>
-</defs>
-<rect x='0' y='0' width='100' height='100' rx='22' fill='url(%23g)'/>
-<text x='50' y='68' font-size='58' text-anchor='middle'
-fill='%23020617' font-family='Arial' font-weight='900'>H</text>
-</svg>">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-
-<style>
-:root{
-  --bg:#0b0f1a;
-  --card:rgba(255,255,255,0.08);
-  --border:rgba(255,255,255,0.15);
-  --text:#f8fafc;
-  --muted:#94a3b8;
-  --primary:#6366f1;
-  --secondary:#22d3ee;
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Inter',sans-serif;
-}
-
-body{
-  background:
-    radial-gradient(circle at top left,#1e293b,transparent 40%),
-    radial-gradient(circle at bottom right,#020617,transparent 40%),
-    var(--bg);
-  color:var(--text);
-}
-
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:90px 20px;
-}
-
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo{
-  display:flex;
-  align-items:center;
-  gap:14px;
-}
-
-.logo-icon{
-  width:46px;
-  height:46px;
-  border-radius:14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:900;
-  font-size:22px;
-  color:#020617;
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  box-shadow:0 12px 30px rgba(99,102,241,.45);
-}
-
-.logo span{
-  font-size:26px;
-  font-weight:900;
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-nav a{
-  color:var(--muted);
-  margin-left:32px;
-  text-decoration:none;
-  font-weight:500;
-  transition:.3s;
-}
-nav a:hover{color:white}
-
-.hero{
-  margin-top:80px;
-  display:flex;
-  flex-direction:column;
-  gap:40px;
-  align-items:center;
-  text-align:center;
-}
-
-.hero h1{
-  font-size:56px;
-  font-weight:900;
-}
-
-.hero h1 span{
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-.hero p{
-  margin-top:25px;
-  font-size:18px;
-  color:var(--muted);
-  max-width:700px;
-}
-
-.btn{
-  display:inline-block;
-  margin-top:35px;
-  padding:16px 36px;
-  border-radius:14px;
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  color:#020617;
-  font-weight:700;
-  text-decoration:none;
-}
-
-footer{
-  text-align:center;
-  padding:50px;
-  color:var(--muted);
-}
-</style>
+  <meta charset="UTF-8">
+  <title>NEURAX - Upgrade Your Mind</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="container">
-  <div class="logo">
-    <div class="logo-icon">H</div>
-    <span>Hexacode</span>
-  </div>
+<header>
+  <div class="logo">NEURAX</div>
   <nav>
-    <a href="#services">Services</a>
-    <a href="#team">Équipe</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<section class="container hero">
-  <h1>Nous codons vos idées<br><span>rapidement et efficacement</span></h1>
-  <p>Des projets web modernes, rapides et accessibles.</p>
-  <a class="btn">Nous contacter</a>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Upgrade Your Mind.<br>Control Your Time.</h1>
+    <p>AI productivity platform to optimize your habits and focus.</p>
+    <div class="buttons">
+      <button class="btn primary">Start Free</button>
+      <button class="btn secondary">Watch Demo</button>
+    </div>
+  </div>
+  <div class="particles"></div>
+</section>
+
+<section id="features" class="features">
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="card">Smart Habit Tracking</div>
+    <div class="card">AI Focus Timer</div>
+    <div class="card">Goal Mapping</div>
+    <div class="card">Analytics Dashboard</div>
+  </div>
+</section>
+
+<section class="how">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div>Plan</div>
+    <div>Execute</div>
+    <div>Analyze</div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <h2>Pricing</h2>
+  <div class="grid">
+    <div class="price-card">
+      <h3>Basic</h3>
+      <p>Free</p>
+    </div>
+    <div class="price-card pro">
+      <h3>Pro</h3>
+      <p>9€/mo</p>
+    </div>
+    <div class="price-card">
+      <h3>Ultra</h3>
+      <p>19€/mo</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <h2>Take Control of Your Potential</h2>
+  <button class="btn primary">Get Started</button>
 </section>
 
 <footer>
-© 2026 Hexacode — Tous droits réservés
+  <p>© 2026 NEURAX</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
